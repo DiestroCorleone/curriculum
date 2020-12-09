@@ -114,6 +114,13 @@ header, article, #edu, #exp, #skills, #hobbies, footer{
 footer{
 	grid-area: footer;
 	background-image: linear-gradient(to right, magenta, purple);
+	display: grid;
+	place-items: center;
+	text-align: center;
+}
+
+footer img{
+	width: 2rem;
 }
 
 footer a, #info a{

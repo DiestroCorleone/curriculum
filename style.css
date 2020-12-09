@@ -80,6 +80,11 @@ header, article, #edu, #exp, #skills, #hobbies, footer{
 	padding: 1rem;
 }
 
+#info div, #edu, #exp{
+	width: 80%;
+	margin: 0 auto;
+}
+
 #info{
 	grid-area: info;
 	padding: 2rem;
@@ -265,6 +270,10 @@ hr{
 	}
 
 	.exp-text{
+		width: 100%;
+	}
+
+	#info div, #edu, #exp{
 		width: 100%;
 	}
 }

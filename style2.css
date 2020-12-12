@@ -167,6 +167,8 @@ article{
 .exp-text{
 	width: 75%;
 	padding: 1rem;
+	display: grid;
+	place-items: center;
 }
 
 .periodo{

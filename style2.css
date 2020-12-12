@@ -209,6 +209,10 @@ h4{
 	font-size: 1.5rem;
 }
 
+p, #info ul, nav ul{
+	font-size:1.2rem;
+}
+
 hr{
 	border: 1px solid #db298b;
 }
@@ -243,7 +247,7 @@ hr{
 	}
 
 	h4{
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}	
 
 	nav ul, article, header{
@@ -267,24 +271,25 @@ hr{
 		display: none;
 	}
 
-	#header-img{
-		width: 100%;
-	}
-
 	header img{
 		width: 30%;
 	}
 
-	.exp-img{
+	#header-img, .exp-img{
 		width: 100%;
 	}
 
 	.exp-text{
 		width: 100%;
+		text-align: center;
 	}
 
 	#info div, #edu, #exp{
 		width: 100%;
+	}
+
+	p, #info ul, nav ul{
+		font-size: 1rem;
 	}
 }
 

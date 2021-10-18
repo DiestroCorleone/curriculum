@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 *{
 	box-sizing: border-box;
@@ -23,14 +24,14 @@ body{
 		"skills skills skills hobbies hobbies"
 		"footer footer footer footer footer";
 	grid-template-rows: auto auto auto auto auto auto auto;
-	font-family: Lato;
-	background-image: linear-gradient(to right, #4c005a, black);
+	font-family: Roboto;
+	background-color: #e5e5e5;
 }
 
 header{
 	grid-area: header;
 	display: flex;
-	background-image: url("images/cover.jpg");
+	background-color: black;
 }
 
 #header-img{
@@ -41,11 +42,12 @@ header{
 
 header img{
 	width: 80%;
-	border-radius: 0.5rem;
+	border: 0.5rem solid #e5e5e5;
 }
 
 nav{
 	grid-area: nav;
+	background-color: #db298b;
 }
 
 nav ul{
@@ -58,14 +60,14 @@ nav li{
 }
 
 nav li:hover{
-	background-color: indigo;
+	background-color: turquoise;
 	transition: background-color 500ms;
 }
 
 nav a{
 	text-decoration: none;
 	font-weight: bold;
-	color: magenta;
+	color: white;
 }
 
 nav li:first-of-type, nav li:nth-child(2){
@@ -80,6 +82,10 @@ header, article, #edu, #exp, #skills, #hobbies, footer{
 	padding: 1rem;
 }
 
+h1, h3, h4, nav, #periodo, #titulo{
+	font-family: Montserrat;
+}
+
 #info div, #edu, #exp{
 	width: 80%;
 	margin: 0 auto;
@@ -88,16 +94,16 @@ header, article, #edu, #exp, #skills, #hobbies, footer{
 #info{
 	grid-area: info;
 	padding: 2rem;
-	background-image: linear-gradient(to right, magenta, purple);
-	color: black;
+	background-color: #353c3c;
+	color: white;
 }
 
 #info h4{
-	color: #440056;
+	color: white;
 }
 
 #info hr{
-	border: 1px solid black;
+	border: 1px solid white;
 }
 
 #exp{
@@ -118,7 +124,7 @@ header, article, #edu, #exp, #skills, #hobbies, footer{
 
 footer{
 	grid-area: footer;
-	background-image: linear-gradient(to right, magenta, purple);
+	background-color: #db298b;
 	display: grid;
 	place-items: center;
 	text-align: center;
@@ -131,14 +137,19 @@ footer img{
 footer a, #info a{
 	text-decoration: none;
 	font-weight: bold;
-	color: indigo;
+	color: white;
+	transition: color, 300ms;
+}
+
+footer a:hover, #info a:hover{
+	color: turquoise;
 }
 
 article{
 	display: flex;
-	background-image: linear-gradient(to right, magenta, purple);
+	background-color: #db298b;
 	margin: 1.5rem 0;
-	border-radius: 0.5rem;
+	box-shadow: 0px 3px 20px grey;
 }
 
 .exp-img{
@@ -156,19 +167,21 @@ article{
 .exp-text{
 	width: 75%;
 	padding: 1rem;
+	display: grid;
+	place-items: center;
 }
 
 .periodo{
-	color: #380047;
+	color: black;
 }
 
 .titulo{
 	font-weight: bold;
-	color: #380047;
+	color: black;
 }
 
 .descripcion{
-	color: lightgray;
+	color: white;
 }
 
 img{
@@ -183,21 +196,25 @@ img:hover{
 
 h1{
 	font-size: 4rem;
-	color: #eba2ff;
+	color: turquoise;
 }
 
 h3{
 	font-size: 2.5rem;
-	color: magenta;
+	color: #db298b;
 }
 
 h4{
-	color: #e893ff;
+	color: black;
 	font-size: 1.5rem;
 }
 
+p, #info ul, nav ul{
+	font-size:1.2rem;
+}
+
 hr{
-	border: 1px solid magenta;
+	border: 1px solid #db298b;
 }
 
 .parallax{
@@ -223,17 +240,14 @@ hr{
 
 	h1{
 		font-size: 3rem;
-		color: #eba2ff;
 	}
 
 	h3{
 		font-size: 2rem;
-		color: magenta;
 	}
 
 	h4{
-		color: #e893ff;
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}	
 
 	nav ul, article, header{
@@ -257,24 +271,25 @@ hr{
 		display: none;
 	}
 
-	#header-img{
-		width: 100%;
-	}
-
 	header img{
 		width: 30%;
 	}
 
-	.exp-img{
+	#header-img, .exp-img{
 		width: 100%;
 	}
 
 	.exp-text{
 		width: 100%;
+		text-align: center;
 	}
 
 	#info div, #edu, #exp{
 		width: 100%;
+	}
+
+	p, #info ul, nav ul{
+		font-size: 1rem;
 	}
 }
 
